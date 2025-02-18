@@ -71,11 +71,10 @@
                     <div class="col-auto my-auto">
                         <div class="h-100">
                             <h5 class="mb-1">
-                                KeshavSoft
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#keshavSoftModal">KeshavSoft</a>
                             </h5>
-                            <p class="mb-0 font-weight-normal text-sm">
-                                CEO / Founder
-                            </p>
+                            <p class="mb-0 font-weight-normal text-sm">CEO / Founder</p>
+                            <input type="text" class="form-control">
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 my-sm-auto ms-sm-auto me-sm-0 mx-auto mt-3">
@@ -351,7 +350,58 @@
             </div>
         </div>
     </template>
+    <!--modal -->
+    <div class="modal fade" id="keshavSoftModal1" tabindex="-1" aria-labelledby="keshavSoftModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="keshavSoftModalLabel">KeshavSoft - CEO/Founder</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control" autofocus>
+                    <!-- <p>Welcome to KeshavSoft! Here is some additional information about the company.</p> -->
+                </div>
 
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="keshavSoftModal" tabindex="-1" role="dialog" aria-labelledby="modal-form"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="card card-plain">
+                        <div class="card-header pb-0 text-left">
+                            <h5 class="">Welcome back</h5>
+                            <p class="mb-0">Enter your email and password to sign in</p>
+                        </div>
+                        <div class="card-body">
+                            <form role="form text-left">
+                                <div class="input-group input-group-outline my-3">
+                                    <label class="form-label">User Name</label>
+                                    <input type="email" class="form-control" onfocus="focused(this)"
+                                        onfocusout="defocused(this)">
+                                </div>
+                                <div class="text-center">
+                                    <button type="button"
+                                        class="btn btn-round bg-gradient-info btn-lg w-100 mt-4 mb-0">Sign in</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                            <p class="mb-4 text-sm mx-auto">
+                                Don't have an account?
+                                <a href="javascript:;" class="text-info text-gradient font-weight-bold">Sign up</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--   Core JS Files   -->
     <script src="./assets/js/core/popper.min.js"></script>
     <script src="./assets/js/core/bootstrap.min.js"></script>
