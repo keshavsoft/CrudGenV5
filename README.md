@@ -73,11 +73,11 @@ This project focuses on automating crudBD operations for JSON files, making it e
    ```
 6. Run the below command to get Backend generated
    ```
-   node .\KCode\ForBatV7\Backend.js
+   node .\KCode\ForBatV8\Backend.js
    ```
 7. Run the below command to get Database created
    ```
-   node .\KCode\ForBatV7\Database.js
+   node .\KCode\ForBatV8\Database.js
    ```
 8. Run the below command to get Frontend generated
    ```
@@ -103,7 +103,7 @@ This project focuses on automating crudBD operations for JSON files, making it e
 
 1. Delete all the folders starting with bin ( which is the BackEnd code).
 
-2. node .\KCode\ForBatV7\Backend.js
+2. node .\KCode\ForBatV8\Backend.js
    
 3. Now all the bin folders only are created ( which is the BackEnd code).
 
