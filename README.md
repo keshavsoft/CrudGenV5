@@ -54,7 +54,7 @@ This project focuses on automating crudBD operations for JSON files, making it e
 
 ### <a name="advancedinstallation"></a>## **advancedinstallation** 🚀
 
-1. should have node 20 installed https://nodejs.org/en/download
+1. should have node 20 installed from https://nodejs.org/dist/v20.18.3/node-v20.18.3-x64.msi
 
 2. https://git-scm.com/
 
