@@ -54,36 +54,38 @@ This project focuses on automating crudBD operations for JSON files, making it e
 
 ### <a name="advancedinstallation"></a>## **advancedinstallation** 🚀
 
-1. https://git-scm.com/
+1. should have node 20 installed https://nodejs.org/en/download
 
-2. Create a folder and navigate into it using the command prompt.
+2. https://git-scm.com/
 
-3. Clone the repository
+3. Create a folder and navigate into it using the command prompt.
+
+4. Clone the repository
    ```
    git clone https://github.com/keshavsoft/CrudGenV5
    ```
-4. Change Directory to CrudGenV5 or Open the cloned folder, navigate to CrudGenV5, and open the command prompt.
+5. Change Directory to CrudGenV5 or Open the cloned folder, navigate to CrudGenV5, and open the command prompt.
    ```
    cd CrudGenV5
    ```
-5. Create .env in the root location, and paste the below line to that file
+6. Create .env in the root location, and paste the below line to that file
    ```
    PORT=7019
    DataPk=required from root:/KSCode/JsonSchema/{DataPk}/DataSchema
    ```
-6. Run the below command to get Backend generated
+7. Run the below command to get Backend generated
    ```
    node .\KCode\ForBatV8\Backend.js
    ```
-7. Run the below command to get Database created
+8. Run the below command to get Database created
    ```
    node .\KCode\ForBatV8\Database.js
    ```
-8. Run the below command to get Frontend generated
+9. Run the below command to get Frontend generated
    ```
    npm run home
    ```   
-9. For Executing:
+10. For Executing:
    ```
    npm run start
    ```
