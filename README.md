@@ -8,7 +8,6 @@ Create Front end, back end and database from given schema
 - [Overview](#Overview)
 - [Key Locations](#keyLocations)
 - [Installation](#installation)
-- [advanced installation](#advancedinstallation)
 - [BackEnd Only](#BackEnd)
 - [Folder Structure](#folder-structure)
 - [Purpose of the Project](#purpose-of-the-project)
@@ -27,32 +26,6 @@ This project focuses on automating crudBD operations for JSON files, making it e
 - **Frontend :** root:public
   
 ### <a name="installation"></a>## **Installation** 🚀
-
-1. https://git-scm.com/
-
-2. Create a folder and navigate into it using the command prompt.
-
-3. Clone the repository
-   ```
-   
-   git clone https://github.com/keshavsoft/CrudGenV5
-   
-   ```
-4. Change Directory to CrudGenV5 or Open the cloned folder, navigate to CrudGenV5, and open the command prompt.
-   ```
-   
-    cd CrudGenV5
-   
-   ```
-5. Run the batch file (For Windows)
-   ```
-   
-   fbd.bat
-   
-   ```
-- node app
-
-### <a name="advancedinstallation"></a>## **advancedinstallation** 🚀
 
 1. should have node 20 installed from https://nodejs.org/dist/v20.18.3/node-v20.18.3-x64.msi
 
