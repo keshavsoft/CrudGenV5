@@ -410,25 +410,47 @@
     <script>
         let webSocket;
 
-        const jFInsertCard = () => {
+        const jFInsertCard = async () => {
             if ("content" in document.createElement("template")) {
                 const tbody = document.querySelector("#ToShowContainer");
                 const template = document.querySelector("#TemplateForCard");
 
+                 // Clone the new row and insert it into the table
+                //const clone = template.content.cloneNode(true);
+
+                //tbody.appendChild(clone);
+
                 // Clone the new row and insert it into the table
-                const clone = template.content.cloneNode(true);
+                //const clone2 = template.content.cloneNode(true);
 
-                tbody.appendChild(clone);
+               // tbody.appendChild(clone2); 
+            tbody.innerHTML = "";
 
-                // Clone the new row and insert it into the table
-                const clone2 = template.content.cloneNode(true);
+            try {
+        
+                const response =await fetch('./data.json');
+                const usersData =await response.json();
 
-                tbody.appendChild(clone2);
-            } else {
-                // Find another way to add the rows to the table because
-                // the HTML template element is not supported.
-            };
+                usersData.forEach(user => {
+                    const clone = template.content.cloneNode(true);
+
+                    clone.querySelector("h6.mb-0").textContent = user.title || "Untitled";
+                    clone.querySelector("p.text-sm.mt-3").textContent = user.text || "No description";
+                    clone.querySelector(".col-6:not(.text-end) h6.text-sm.mb-0").textContent = user.participants || "0";
+                    clone.querySelector(".col-6.text-end h6.text-sm.mb-0").textContent = user.dueDate || "N/A";
+
+                    tbody.appendChild(clone);
+                });
+            } catch (error) {
+                console.error("Error fetching JSON data:", error);
+                alert("Failed to load user data.");
+            }
+        } else {
+            alert("HTML template element is not supported in this browser.");
+        }
         };
+
+        document.getElementById("ShowAllUsersId").addEventListener("click", jFInsertCard);
 
         const jFLocalChangeName = (inNameToChange) => {
             let jVarLocalObjectToServer = {};
