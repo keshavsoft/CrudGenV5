@@ -33,8 +33,9 @@ var port = normalizePort(process.env.PORT || '7019');
 // app.disable('x-powered-by');
 
 app.use(cookieParser());
-
-app.use(express.json({ limit: '100mb' }));
+// app.use(bodyParser.text());
+// app.use(express.json({ limit: '100mb' }));
+// app.use(express.text());
 
 app.use('/', express.static(path.join(path.resolve(), 'public')));
 
