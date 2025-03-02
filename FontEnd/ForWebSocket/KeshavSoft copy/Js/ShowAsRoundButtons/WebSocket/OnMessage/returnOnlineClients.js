@@ -2,7 +2,7 @@ let StartFunc = ({ inUsersAsArray }) => {
     console.log("inUsersAsArray : ", inUsersAsArray);
 
     inUsersAsArray.forEach(element => {
-        jFInsertCard({ inCardData: element });
+        // jFInsertCard({ inCardData: element });
         jFInsertRoundIcons({ inCardData: element });
     });
 };

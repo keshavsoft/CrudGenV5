@@ -2,3 +2,9 @@ POST http://localhost:7327/utility/ForTesting/PostJson
 Content-Type: application/json
 
 {"Description":"","Factory":"","BranchName":""}
+
+HTTP/1.1 200  - OK
+x-powered-by: Express
+date: Sat, 01 Mar 2025 12:50:55 GMT
+connection: close
+content-length: 47
