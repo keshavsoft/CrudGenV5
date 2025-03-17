@@ -58,16 +58,16 @@ This project focuses on automating crudBD operations for JSON files, making it e
    ```
    npm run home
    ```   
-10. For Executing:
+10. For Executing
    ```
    npm run start
    ```
  
 #### **Key Features** 
-- **Dynamic Schema Handling:** Define table schemas using JSON files and dynamically generate crudBD operations.
+- **Dynamic Schema Handling:** Define table schemas using JSON files and dynamically generate Backend, Database and FrontEnd for CRUD operations.
 - **Cross-Platform Compatibility:** Compatible with Windows, Mac, and Linux operating systems.
 - **Effortless Setup:** Use provided batch files for Windows or simple commands for other OS to set up the project quickly.
-- **Automatic Frontend Setup:** Automatically creates a frontend codebase in the public/JsoncrudBD directory.
+- **Automatic Frontend Setup:** Automatically creates a frontend codebase in the public directory.
 #### **Technologies Used** 
 - **Node.js:** Leveraging the power of JavaScript on the server-side.
 - **Express.js:** A minimal and flexible Node.js web application framework for building robust APIs.
